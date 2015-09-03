@@ -27,7 +27,7 @@
                     <name>Network Interfaces</name>
                     <type>4</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                    <snmp_oid>.1.3.6.1.2.1.31.1.1.1.1</snmp_oid>
+                    <snmp_oid>IF-MIB::ifName</snmp_oid>
                     <key>ifName</key>
                     <delay>300</delay>
                     <status>0</status>
@@ -251,8 +251,8 @@
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>1</multiplier>
-                            <snmp_oid>IF-MIB::ifInOctets.{#SNMPINDEX}</snmp_oid>
-                            <key>ifInOctets[{#SNMPVALUE}]</key>
+                            <snmp_oid>IF-MIB::ifHCInOctets.{#SNMPINDEX}</snmp_oid>
+                            <key>ifHCInOctets[{#SNMPVALUE}]</key>
                             <delay>60</delay>
                             <history>7</history>
                             <trends>365</trends>
@@ -266,45 +266,6 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privpassphrase/>
                             <formula>8</formula>
-                            <delay_flex/>
-                            <params/>
-                            <ipmi_sensor/>
-                            <data_type>0</data_type>
-                            <authtype>0</authtype>
-                            <username/>
-                            <password/>
-                            <publickey/>
-                            <privatekey/>
-                            <port/>
-                            <description/>
-                            <inventory_link>0</inventory_link>
-                            <applications>
-                                <application>
-                                    <name>Interface(s)</name>
-                                </application>
-                            </applications>
-                            <valuemap/>
-                        </item_prototype>
-                        <item_prototype>
-                            <name>Length of the output packet queue for interface $1</name>
-                            <type>4</type>
-                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                            <multiplier>0</multiplier>
-                            <snmp_oid>.1.3.6.1.2.1.2.2.1.21.{#SNMPINDEX}</snmp_oid>
-                            <key>ifOutQLen[{#SNMPVALUE}]</key>
-                            <delay>60</delay>
-                            <history>7</history>
-                            <trends>365</trends>
-                            <status>0</status>
-                            <value_type>3</value_type>
-                            <allowed_hosts/>
-                            <units>Packets</units>
-                            <delta>0</delta>
-                            <snmpv3_securityname/>
-                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                            <snmpv3_authpassphrase/>
-                            <snmpv3_privpassphrase/>
-                            <formula>1</formula>
                             <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
@@ -448,8 +409,8 @@
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>1</multiplier>
-                            <snmp_oid>IF-MIB::ifOutOctets.{#SNMPINDEX}</snmp_oid>
-                            <key>ifOutOctets[{#SNMPVALUE}]</key>
+                            <snmp_oid>IF-MIB::ifHCOutOctets.{#SNMPINDEX}</snmp_oid>
+                            <key>ifHCOutOctets[{#SNMPVALUE}]</key>
                             <delay>60</delay>
                             <history>7</history>
                             <trends>365</trends>
@@ -524,7 +485,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{ZBX-DELL-POWERCONNECT-INTERFACES:if.speed[&quot;-d&quot;,&quot;{HOST.HOST}&quot;,&quot;-c&quot;,&quot;{$SNMP_COMMUNITY}&quot;,&quot;-s&quot;,&quot;{#SNMPINDEX}&quot;].last(0)}&gt;0 &amp; ({ZBX-DELL-POWERCONNECT-INTERFACES:ifInOctets[{#SNMPVALUE}].avg(300)})&gt;({ZBX-DELL-POWERCONNECT-INTERFACES:if.speed[&quot;-d&quot;,&quot;{HOST.HOST}&quot;,&quot;-c&quot;,&quot;{$SNMP_COMMUNITY}&quot;,&quot;-s&quot;,&quot;{#SNMPINDEX}&quot;].last(0)})*0.8</expression>
+                            <expression>{ZBX-DELL-POWERCONNECT-INTERFACES:if.speed[&quot;-d&quot;,&quot;{HOST.HOST}&quot;,&quot;-c&quot;,&quot;{$SNMP_COMMUNITY}&quot;,&quot;-s&quot;,&quot;{#SNMPINDEX}&quot;].last(0)}&gt;0 &amp; ({ZBX-DELL-POWERCONNECT-INTERFACES:ifHCInOctets[{#SNMPVALUE}].avg(300)})&gt;({ZBX-DELL-POWERCONNECT-INTERFACES:if.speed[&quot;-d&quot;,&quot;{HOST.HOST}&quot;,&quot;-c&quot;,&quot;{$SNMP_COMMUNITY}&quot;,&quot;-s&quot;,&quot;{#SNMPINDEX}&quot;].last(0)})*0.8</expression>
                             <name>Incoming use on interface {#SNMPVALUE} exceed 80% for the last 5 minutes</name>
                             <url/>
                             <status>0</status>
@@ -551,20 +512,11 @@
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{ZBX-DELL-POWERCONNECT-INTERFACES:if.speed[&quot;-d&quot;,&quot;{HOST.HOST}&quot;,&quot;-c&quot;,&quot;{$SNMP_COMMUNITY}&quot;,&quot;-s&quot;,&quot;{#SNMPINDEX}&quot;].last(0)}&gt;0 &amp; ({ZBX-DELL-POWERCONNECT-INTERFACES:ifOutOctets[{#SNMPVALUE}].avg(300)})&gt;({ZBX-DELL-POWERCONNECT-INTERFACES:if.speed[&quot;-d&quot;,&quot;{HOST.HOST}&quot;,&quot;-c&quot;,&quot;{$SNMP_COMMUNITY}&quot;,&quot;-s&quot;,&quot;{#SNMPINDEX}&quot;].last(0)})*0.8</expression>
+                            <expression>{ZBX-DELL-POWERCONNECT-INTERFACES:if.speed[&quot;-d&quot;,&quot;{HOST.HOST}&quot;,&quot;-c&quot;,&quot;{$SNMP_COMMUNITY}&quot;,&quot;-s&quot;,&quot;{#SNMPINDEX}&quot;].last(0)}&gt;0 &amp; ({ZBX-DELL-POWERCONNECT-INTERFACES:ifHCOutOctets[{#SNMPVALUE}].avg(300)})&gt;({ZBX-DELL-POWERCONNECT-INTERFACES:if.speed[&quot;-d&quot;,&quot;{HOST.HOST}&quot;,&quot;-c&quot;,&quot;{$SNMP_COMMUNITY}&quot;,&quot;-s&quot;,&quot;{#SNMPINDEX}&quot;].last(0)})*0.8</expression>
                             <name>Outgoing use on interface {#SNMPVALUE} exceed 80% for the last 5 minutes</name>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
-                            <description/>
-                            <type>0</type>
-                        </trigger_prototype>
-                        <trigger_prototype>
-                            <expression>{ZBX-DELL-POWERCONNECT-INTERFACES:ifOutQLen[{#SNMPVALUE}].last(0)}&gt;0</expression>
-                            <name>Output packets queue for {#SNMPVALUE} is not empty</name>
-                            <url/>
-                            <status>0</status>
-                            <priority>1</priority>
                             <description/>
                             <type>0</type>
                         </trigger_prototype>
@@ -639,38 +591,6 @@
                             </graph_items>
                         </graph_prototype>
                         <graph_prototype>
-                            <name>Interface {#SNMPVALUE} - Length of the output packets queue</name>
-                            <width>900</width>
-                            <height>200</height>
-                            <yaxismin>0.0000</yaxismin>
-                            <yaxismax>100.0000</yaxismax>
-                            <show_work_period>1</show_work_period>
-                            <show_triggers>1</show_triggers>
-                            <type>0</type>
-                            <show_legend>1</show_legend>
-                            <show_3d>0</show_3d>
-                            <percent_left>0.0000</percent_left>
-                            <percent_right>0.0000</percent_right>
-                            <ymin_type_1>0</ymin_type_1>
-                            <ymax_type_1>0</ymax_type_1>
-                            <ymin_item_1>0</ymin_item_1>
-                            <ymax_item_1>0</ymax_item_1>
-                            <graph_items>
-                                <graph_item>
-                                    <sortorder>0</sortorder>
-                                    <drawtype>1</drawtype>
-                                    <color>C80000</color>
-                                    <yaxisside>0</yaxisside>
-                                    <calc_fnc>2</calc_fnc>
-                                    <type>0</type>
-                                    <item>
-                                        <host>ZBX-DELL-POWERCONNECT-INTERFACES</host>
-                                        <key>ifOutQLen[{#SNMPVALUE}]</key>
-                                    </item>
-                                </graph_item>
-                            </graph_items>
-                        </graph_prototype>
-                        <graph_prototype>
                             <name>Interface {#SNMPVALUE} - Traffic (bits/sec, 95th Percentile)</name>
                             <width>900</width>
                             <height>200</height>
@@ -697,7 +617,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-DELL-POWERCONNECT-INTERFACES</host>
-                                        <key>ifInOctets[{#SNMPVALUE}]</key>
+                                        <key>ifHCInOctets[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
                                 <graph_item>
@@ -709,7 +629,7 @@
                                     <type>0</type>
                                     <item>
                                         <host>ZBX-DELL-POWERCONNECT-INTERFACES</host>
-                                        <key>ifOutOctets[{#SNMPVALUE}]</key>
+                                        <key>ifHCOutOctets[{#SNMPVALUE}]</key>
                                     </item>
                                 </graph_item>
                             </graph_items>
