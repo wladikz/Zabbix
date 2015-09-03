@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2012-11-05T15:20:12Z</date>
+    <date>2015-09-03T11:26:58Z</date>
     <groups>
         <group>
             <name>ZBX-DELL-POWERCONNECT-TEMPLATES</name>
@@ -11,6 +11,7 @@
         <template>
             <template>ZBX-DELL-POWERCONNECT-HARDWARE</template>
             <name>ZBX-DELL-POWERCONNECT-HARDWARE</name>
+            <description/>
             <groups>
                 <group>
                     <name>ZBX-DELL-POWERCONNECT-TEMPLATES</name>
@@ -32,9 +33,12 @@
                     <delay>300</delay>
                     <status>0</status>
                     <allowed_hosts/>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <delay_flex/>
                     <params/>
@@ -45,7 +49,11 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <filter>:</filter>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
                     <lifetime>7</lifetime>
                     <description/>
                     <item_prototypes>
@@ -55,7 +63,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>.1.3.6.1.4.1.674.10895.3000.1.2.100.8.1.3.{#SNMPINDEX}</snmp_oid>
-                            <key>productIdentificationAssetTag[{#SNMPVALUE}]</key>
+                            <key>productIdentificationAssetTag[{#SNMPINDEX}]</key>
                             <delay>300</delay>
                             <history>7</history>
                             <trends>365</trends>
@@ -64,9 +72,12 @@
                             <allowed_hosts/>
                             <units/>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -87,6 +98,7 @@
                                 </application>
                             </applications>
                             <valuemap/>
+                            <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
                             <name>Bootrom version of unit $1</name>
@@ -94,7 +106,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>.1.3.6.1.4.1.674.10895.3000.1.2.100.8.1.6.{#SNMPINDEX}</snmp_oid>
-                            <key>productIdentificationBootromVersion[{#SNMPVALUE}]</key>
+                            <key>productIdentificationBootromVersion[{#SNMPINDEX}]</key>
                             <delay>300</delay>
                             <history>7</history>
                             <trends>365</trends>
@@ -103,9 +115,12 @@
                             <allowed_hosts/>
                             <units/>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -126,6 +141,7 @@
                                 </application>
                             </applications>
                             <valuemap/>
+                            <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
                             <name>Chassis service tag of unit $1</name>
@@ -133,7 +149,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>.1.3.6.1.4.1.674.10895.3000.1.2.100.8.1.5.{#SNMPINDEX}</snmp_oid>
-                            <key>productIdentificationChassisServiceTag[{#SNMPVALUE}]</key>
+                            <key>productIdentificationChassisServiceTag[{#SNMPINDEX}]</key>
                             <delay>300</delay>
                             <history>7</history>
                             <trends>365</trends>
@@ -142,9 +158,12 @@
                             <allowed_hosts/>
                             <units/>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -165,6 +184,7 @@
                                 </application>
                             </applications>
                             <valuemap/>
+                            <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
                             <name>Serial number of unit $1</name>
@@ -172,7 +192,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>.1.3.6.1.4.1.674.10895.3000.1.2.100.8.1.2.{#SNMPINDEX}</snmp_oid>
-                            <key>productIdentificationSerialNumber[{#SNMPVALUE}]</key>
+                            <key>productIdentificationSerialNumber[{#SNMPINDEX}]</key>
                             <delay>300</delay>
                             <history>7</history>
                             <trends>365</trends>
@@ -181,9 +201,12 @@
                             <allowed_hosts/>
                             <units/>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -204,6 +227,7 @@
                                 </application>
                             </applications>
                             <valuemap/>
+                            <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
                             <name>Service tag of unit $1</name>
@@ -211,7 +235,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>.1.3.6.1.4.1.674.10895.3000.1.2.100.8.1.4.{#SNMPINDEX}</snmp_oid>
-                            <key>productIdentificationServiceTag[{#SNMPVALUE}]</key>
+                            <key>productIdentificationServiceTag[{#SNMPINDEX}]</key>
                             <delay>300</delay>
                             <history>7</history>
                             <trends>365</trends>
@@ -220,9 +244,12 @@
                             <allowed_hosts/>
                             <units/>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -243,11 +270,12 @@
                                 </application>
                             </applications>
                             <valuemap/>
+                            <logtimefmt/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{ZBX-DELL-POWERCONNECT-HARDWARE:productIdentificationBootromVersion[{#SNMPVALUE}].diff(0)}&gt;0</expression>
+                            <expression>{ZBX-DELL-POWERCONNECT-HARDWARE:productIdentificationBootromVersion[{#SNMPINDEX}].diff(0)}&gt;0</expression>
                             <name>Bootrom version of unit {#SNMPVALUE} was changed</name>
                             <url/>
                             <status>0</status>
@@ -256,7 +284,7 @@
                             <type>0</type>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{ZBX-DELL-POWERCONNECT-HARDWARE:productIdentificationSerialNumber[{#SNMPVALUE}].diff(0)}&gt;0</expression>
+                            <expression>{ZBX-DELL-POWERCONNECT-HARDWARE:productIdentificationSerialNumber[{#SNMPINDEX}].diff(0)}&gt;0</expression>
                             <name>Serial number of unit {#SNMPVALUE} was changed</name>
                             <url/>
                             <status>0</status>
@@ -266,6 +294,7 @@
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes/>
+                    <host_prototypes/>
                 </discovery_rule>
             </discovery_rules>
             <macros/>

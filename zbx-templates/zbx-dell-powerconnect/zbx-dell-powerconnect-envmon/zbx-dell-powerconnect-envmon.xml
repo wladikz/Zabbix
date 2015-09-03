@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>2.0</version>
-    <date>2012-11-05T15:17:17Z</date>
+    <date>2015-09-03T11:24:07Z</date>
     <groups>
         <group>
             <name>ZBX-DELL-POWERCONNECT-TEMPLATES</name>
@@ -11,6 +11,7 @@
         <template>
             <template>ZBX-DELL-POWERCONNECT-ENVMON</template>
             <name>ZBX-DELL-POWERCONNECT-ENVMON</name>
+            <description/>
             <groups>
                 <group>
                     <name>ZBX-DELL-POWERCONNECT-TEMPLATES</name>
@@ -40,9 +41,12 @@
                     <allowed_hosts/>
                     <units>bytes</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1000</formula>
                     <delay_flex/>
@@ -63,6 +67,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Contact</name>
@@ -79,9 +84,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -102,6 +110,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Device Location</name>
@@ -118,9 +127,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -141,6 +153,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Device Manufacter Name</name>
@@ -157,9 +170,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -180,6 +196,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Device Model Name</name>
@@ -196,9 +213,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -219,6 +239,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Device Name</name>
@@ -235,9 +256,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -258,6 +282,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Device reachability using ICMP</name>
@@ -274,9 +299,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -299,6 +327,7 @@
                     <valuemap>
                         <name>Host status</name>
                     </valuemap>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Device Serial Number</name>
@@ -315,9 +344,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex>50/1-7,00:00-24:00</delay_flex>
@@ -338,6 +370,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Software version</name>
@@ -354,9 +387,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -377,6 +413,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Software version (full)</name>
@@ -393,9 +430,12 @@
                     <allowed_hosts/>
                     <units/>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -416,6 +456,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Unused memory for the last 5 minutes</name>
@@ -432,9 +473,12 @@
                     <allowed_hosts/>
                     <units>bytes</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1000</formula>
                     <delay_flex/>
@@ -455,6 +499,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Uptime</name>
@@ -471,9 +516,12 @@
                     <allowed_hosts/>
                     <units>uptime</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>0.01</formula>
                     <delay_flex/>
@@ -494,6 +542,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
                 <item>
                     <name>Used CPU for the last 5 minutes</name>
@@ -510,9 +559,12 @@
                     <allowed_hosts/>
                     <units>%</units>
                     <delta>0</delta>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <formula>1</formula>
                     <delay_flex/>
@@ -533,6 +585,7 @@
                         </application>
                     </applications>
                     <valuemap/>
+                    <logtimefmt/>
                 </item>
             </items>
             <discovery_rules>
@@ -545,9 +598,12 @@
                     <delay>300</delay>
                     <status>0</status>
                     <allowed_hosts/>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <delay_flex/>
                     <params/>
@@ -558,7 +614,11 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <filter>:</filter>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
                     <lifetime>7</lifetime>
                     <description/>
                     <item_prototypes>
@@ -568,7 +628,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>.1.3.6.1.4.1.674.10895.3000.1.2.110.7.1.1.2.{#SNMPINDEX}</snmp_oid>
-                            <key>envMonFanStatusDescr[{#SNMPVALUE}]</key>
+                            <key>envMonFanStatusDescr[{#SNMPVALUE} {#SNMPINDEX}]</key>
                             <delay>300</delay>
                             <history>7</history>
                             <trends>365</trends>
@@ -577,9 +637,12 @@
                             <allowed_hosts/>
                             <units/>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -600,14 +663,15 @@
                                 </application>
                             </applications>
                             <valuemap/>
+                            <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
-                            <name>$1 state</name>
+                            <name>$1 Speed</name>
                             <type>4</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
-                            <snmp_oid>.1.3.6.1.4.1.674.10895.3000.1.2.110.7.1.1.3.{#SNMPINDEX}</snmp_oid>
-                            <key>envMonFanState[{#SNMPVALUE}]</key>
+                            <snmp_oid>.1.3.6.1.4.1.674.10895.3000.1.2.110.7.1.1.4.{#SNMPINDEX}</snmp_oid>
+                            <key>envMonFanSpeed[{#SNMPVALUE} {#SNMPINDEX}]</key>
                             <delay>300</delay>
                             <history>7</history>
                             <trends>365</trends>
@@ -616,9 +680,55 @@
                             <allowed_hosts/>
                             <units/>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <formula>1</formula>
+                            <delay_flex/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <data_type>0</data_type>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>System</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>$1 State</name>
+                            <type>4</type>
+                            <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                            <multiplier>0</multiplier>
+                            <snmp_oid>.1.3.6.1.4.1.674.10895.3000.1.2.110.7.1.1.3.{#SNMPINDEX}</snmp_oid>
+                            <key>envMonFanState[{#SNMPVALUE} {#SNMPINDEX}]</key>
+                            <delay>300</delay>
+                            <history>7</history>
+                            <trends>365</trends>
+                            <status>0</status>
+                            <value_type>3</value_type>
+                            <allowed_hosts/>
+                            <units/>
+                            <delta>0</delta>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -641,11 +751,12 @@
                             <valuemap>
                                 <name>dellEnvMonState</name>
                             </valuemap>
+                            <logtimefmt/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{ZBX-DELL-POWERCONNECT-ENVMON:envMonFanState[{#SNMPVALUE}].diff(0)}=1</expression>
+                            <expression>{ZBX-DELL-POWERCONNECT-ENVMON:envMonFanState[{#SNMPVALUE} {#SNMPINDEX}].diff(0)}=1</expression>
                             <name>Operational status for {#SNMPVALUE} was changed</name>
                             <url/>
                             <status>0</status>
@@ -655,6 +766,7 @@
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes/>
+                    <host_prototypes/>
                 </discovery_rule>
                 <discovery_rule>
                     <name>Power Supply</name>
@@ -665,9 +777,12 @@
                     <delay>300</delay>
                     <status>0</status>
                     <allowed_hosts/>
+                    <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
                     <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
                     <delay_flex/>
                     <params/>
@@ -678,7 +793,11 @@
                     <publickey/>
                     <privatekey/>
                     <port/>
-                    <filter>:</filter>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
                     <lifetime>7</lifetime>
                     <description/>
                     <item_prototypes>
@@ -688,7 +807,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>.1.3.6.1.4.1.674.10895.3000.1.2.110.7.2.1.2.{#SNMPINDEX}</snmp_oid>
-                            <key>envMonSupplyStatusDescr[{#SNMPVALUE}]</key>
+                            <key>envMonSupplyStatusDescr[{#SNMPVALUE}  {#SNMPINDEX}]</key>
                             <delay>300</delay>
                             <history>7</history>
                             <trends>365</trends>
@@ -697,9 +816,12 @@
                             <allowed_hosts/>
                             <units/>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -720,6 +842,7 @@
                                 </application>
                             </applications>
                             <valuemap/>
+                            <logtimefmt/>
                         </item_prototype>
                         <item_prototype>
                             <name>$1 power supply state</name>
@@ -727,7 +850,7 @@
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
                             <multiplier>0</multiplier>
                             <snmp_oid>.1.3.6.1.4.1.674.10895.3000.1.2.110.7.2.1.3.{#SNMPINDEX}</snmp_oid>
-                            <key>envMonSupplyState[{#SNMPVALUE}]</key>
+                            <key>envMonSupplyState[{#SNMPVALUE} {#SNMPINDEX}]</key>
                             <delay>300</delay>
                             <history>7</history>
                             <trends>365</trends>
@@ -736,9 +859,12 @@
                             <allowed_hosts/>
                             <units/>
                             <delta>0</delta>
+                            <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
                             <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
                             <formula>1</formula>
                             <delay_flex/>
@@ -761,11 +887,12 @@
                             <valuemap>
                                 <name>dellEnvMonState</name>
                             </valuemap>
+                            <logtimefmt/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{ZBX-DELL-POWERCONNECT-ENVMON:envMonSupplyState[{#SNMPVALUE}].diff(0)}=1</expression>
+                            <expression>{ZBX-DELL-POWERCONNECT-ENVMON:envMonSupplyState[{#SNMPVALUE} {#SNMPINDEX}].diff(0)}=1</expression>
                             <name>Operational status for {#SNMPVALUE} power supply was changed</name>
                             <url/>
                             <status>0</status>
@@ -775,6 +902,7 @@
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes/>
+                    <host_prototypes/>
                 </discovery_rule>
             </discovery_rules>
             <macros/>
@@ -797,7 +925,7 @@
             <expression>({ZBX-DELL-POWERCONNECT-ENVMON:agentSwitchCpuProcessMemAvailable.last(0)}-{ZBX-DELL-POWERCONNECT-ENVMON:agentSwitchCpuProcessMemFree.last(0)})&gt;0.6*{ZBX-DELL-POWERCONNECT-ENVMON:agentSwitchCpuProcessMemAvailable.last(0)}</expression>
             <name>Memory usage exceeded 60%</name>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>2</priority>
             <description/>
             <type>0</type>
@@ -807,7 +935,7 @@
             <expression>({ZBX-DELL-POWERCONNECT-ENVMON:agentSwitchCpuProcessMemAvailable.last(0)}-{ZBX-DELL-POWERCONNECT-ENVMON:agentSwitchCpuProcessMemFree.last(0)})&gt;0.7*{ZBX-DELL-POWERCONNECT-ENVMON:agentSwitchCpuProcessMemAvailable.last(0)}</expression>
             <name>Memory usage exceeded 70%</name>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>3</priority>
             <description/>
             <type>0</type>
@@ -817,7 +945,7 @@
             <expression>({ZBX-DELL-POWERCONNECT-ENVMON:agentSwitchCpuProcessMemAvailable.last(0)}-{ZBX-DELL-POWERCONNECT-ENVMON:agentSwitchCpuProcessMemFree.last(0)})&gt;0.8*{ZBX-DELL-POWERCONNECT-ENVMON:agentSwitchCpuProcessMemAvailable.last(0)}</expression>
             <name>Memory usage exceeded 80%</name>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>4</priority>
             <description/>
             <type>0</type>
